@@ -1,12 +1,40 @@
-# React + Vite
+# 🔥 DeFi Gas Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek and modern decentralized finance (DeFi) dashboard that displays **real-time Ethereum gas prices**, **historical candlestick charts**, and a **simulation mode** with USD pricing estimates. Built with **React**, **Zustand**, **Ethers.js**, and **Tailwind CSS**, the app features a purplish glowing UI with mode-based rendering and state management.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🎯 **Live Mode**
+  - Real-time Ethereum gas price tracking using `ethers.WebSocketProvider`
+  - Interactive candlestick chart for fee history
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🧪 **Simulation Mode**
+  - Custom gas/priority fee entry
+  - Instant USD cost estimation
+  - Comparison table for different scenarios
+
+- 🌌 **Modern UI**
+  - Purple-glow animated theme
+  - Fully responsive design
+  - Zustand-based global state switch between live/simulation
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React, Tailwind CSS, Zustand
+- **Web3**: Ethers.js
+- **Charting**: Lightweight custom candlestick logic (extendable)
+- **Styling**: Tailwind CSS with glowing border animation
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/rahulchhajed01/defi-gas-tracker.git
+cd defi-gas-tracker
+npm install
+npm run dev
