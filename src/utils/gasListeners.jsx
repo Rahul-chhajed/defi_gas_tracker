@@ -2,11 +2,12 @@
 import { JsonRpcProvider } from "ethers";
 import { useAppStore } from "../store/useAppStore";
 
-const RPCS = {
-  ethereum: "https://eth-mainnet.g.alchemy.com/v2/UvWnSfrl7kM3buZRsg1d2",
-  polygon: "https://polygon-mainnet.g.alchemy.com/v2/UvWnSfrl7kM3buZRsg1d2",
-  arbitrum: "https://arb-mainnet.g.alchemy.com/v2/UvWnSfrl7kM3buZRsg1d2",
+export const RPCS = {
+  ethereum: import.meta.env.VITE_ALCHEMY_ETHEREUM,
+  polygon: import.meta.env.VITE_ALCHEMY_POLYGON,
+  arbitrum: import.meta.env.VITE_ALCHEMY_ARBITRUM,
 };
+
 
 const POLL_INTERVAL = 6000;
 const SAMPLE_INTERVAL = 60000;
